@@ -1,24 +1,7 @@
 # Job Portal Management System
-### Northstar web portal · Python · SQLite · BCA Academic Project
 
-> **Runnable implementation:** this repository now includes a working browser
-> application with a Python HTTP backend and SQLite persistence. The original
-> C++ / Qt / MySQL plan below remains as the academic project specification and
-> reference; it is not the active runtime stack. The active app starts with
-> `python3 app.py` and needs no package installation.
 
-## Run the portal
 
-```bash
-python3 app.py
-```
-
-Open <http://127.0.0.1:8000>. The database is created automatically at
-`data/job_portal.sqlite3` (override with `JOB_PORTAL_DB_PATH`). No sample users
-or job listings are inserted. Create seeker and employer accounts in the UI.
-
-Create the first administrator from a terminal; the password is prompted
-without echo and is never placed in the command line:
 
 ```bash
 python3 app.py --create-admin admin@example.com "Portal Administrator"
