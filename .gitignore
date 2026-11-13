@@ -1,0 +1,9 @@
+/build/
+.env
+*.user
+*.log
+.idea/
+.vscode/
+__pycache__/
+*.py[cod]
+/data/

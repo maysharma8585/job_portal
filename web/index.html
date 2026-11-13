@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Northstar — Job Portal</title>
+  <link rel="stylesheet" href="/web/styles.css">
+  <script src="/web/app.js" defer></script>
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#home"><span class="brand-mark">✳</span><span>northstar<small>CAREER PORTAL</small></span></a>
+      <div class="nav-label">WORKSPACE</div>
+      <nav id="navigation" aria-label="Main navigation"></nav>
+      <div class="sidebar-bottom"><div class="avatar" id="side-avatar">G</div><div class="side-user"><strong id="side-name">Guest</strong><small id="side-role">Browsing jobs</small></div><button id="logout" class="icon-button hidden" title="Sign out" aria-label="Sign out">↗</button></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><div class="crumb"><span>PORTAL</span><b>/</b><strong id="page-crumb">HOME</strong></div><div class="top-actions"><span class="secure-tag"><i></i> Secure workspace</span><button id="auth-open" class="button button-small button-dark">Sign in</button></div></header>
+      <section id="content" class="content" aria-live="polite"></section>
+      <footer class="footer"><span>Northstar Job Portal</span><span>Career opportunities, thoughtfully organized.</span></footer>
+    </main>
+  </div>
+  <dialog id="dialog" class="dialog"><div id="dialog-content"></div></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
